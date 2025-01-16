@@ -22,7 +22,7 @@ fun App() {
         ) {
             PieChart(
                 data = listOf(1f, 2f),
-                colors = listOf(Color.Cyan, Color.Blue),
+                colors = listOf(Color.Cyan, Color.Green),
             )
         }
     }
