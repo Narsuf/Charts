@@ -1,4 +1,4 @@
-package org.n27.charts.common
+package org.n27.charts.common.composables
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.size
