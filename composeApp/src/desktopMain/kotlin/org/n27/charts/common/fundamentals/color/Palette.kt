@@ -1,4 +1,4 @@
-package org.n27.charts.common.fundamentals
+package org.n27.charts.common.fundamentals.color
 
 import androidx.compose.ui.graphics.Color
 
@@ -18,4 +18,6 @@ object Palette {
 
     val DarkGreen = Color(0xFF7FAE37)
     val LightGreen = Color(0xFFA1CE5C)
+
+    val Gray = Color(0xFFE9E9E9)
 }
