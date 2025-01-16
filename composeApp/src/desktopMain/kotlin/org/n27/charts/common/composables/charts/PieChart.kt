@@ -9,11 +9,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.DrawScope
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.dp
+import kotlinx.collections.immutable.ImmutableList
 
 @Composable
 fun PieChart(
-    data: List<Float>,
-    colors: List<Color>,
+    data: ImmutableList<Float>,
+    colors: ImmutableList<Color>,
     thickness: Float = 40f,
     modifier: Modifier = Modifier.size(200.dp),
 ) {
