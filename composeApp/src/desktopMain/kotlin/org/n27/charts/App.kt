@@ -21,32 +21,34 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.n27.charts.common.composables.cards.Card
 import org.n27.charts.common.composables.cards.CardContainer
 import org.n27.charts.common.composables.charts.PieChart
-import org.n27.charts.common.fundamentals.color.Palette.DarkBlue
-import org.n27.charts.common.fundamentals.color.Palette.DarkGreen
-import org.n27.charts.common.fundamentals.color.Palette.DarkPurple
-import org.n27.charts.common.fundamentals.color.Palette.DarkRed
-import org.n27.charts.common.fundamentals.color.Palette.DarkYellow
-import org.n27.charts.common.fundamentals.color.Palette.LightBlue
-import org.n27.charts.common.fundamentals.color.Palette.LightGreen
-import org.n27.charts.common.fundamentals.color.Palette.LightPurple
-import org.n27.charts.common.fundamentals.color.Palette.LightRed
-import org.n27.charts.common.fundamentals.color.Palette.LightYellow
+import org.n27.charts.common.fundamentals.color.Palette.BLUE
+import org.n27.charts.common.fundamentals.color.Palette.DARK_BLUE
+import org.n27.charts.common.fundamentals.color.Palette.DARK_GREEN
+import org.n27.charts.common.fundamentals.color.Palette.DARK_PURPLE
+import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
+import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_PURPLE
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_RED
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_YELLOW
 import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
-    Asset(name = "USD bond 7-10yr", color = DarkBlue, percentage = 25f),
-    Asset(name = "German bonds", color = DarkRed, percentage = 5f),
-    Asset(name = "Other bonds", color = DarkGreen, percentage = 15f),
+    Asset(name = "USD bond +20yr", color = DARK_BLUE, percentage = 10f),
+    Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 15f),
+    Asset(name = "German bonds", color = DARK_RED, percentage = 5f),
+    Asset(name = "Other bonds", color = DARK_GREEN, percentage = 15f),
 
-    Asset(name = "S&P 500", color = LightBlue, percentage = 25f),
-    Asset(name = "DAX 40", color = LightRed, percentage = 5f),
-    Asset(name = "NIKKEI 225", color = LightPurple, percentage = 5f),
-    Asset(name = "Stocks", color = LightGreen, percentage = 10f),
+    Asset(name = "S&P 500", color = LIGHT_BLUE, percentage = 25f),
+    Asset(name = "DAX 40", color = LIGHT_RED, percentage = 5f),
+    Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 5f),
+    Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 10f),
 
-    Asset(name = "Bitcoin", color = LightYellow, percentage = 1f),
-    Asset(name = "Gold", color = DarkYellow, percentage = 8f),
-    Asset(name = "Commodity", color = DarkPurple, percentage = 1f),
+    Asset(name = "Bitcoin", color = LIGHT_YELLOW, percentage = 1f),
+    Asset(name = "Gold", color = DARK_YELLOW, percentage = 7.5f),
+    Asset(name = "Commodity", color = DARK_PURPLE, percentage = 1.5f),
 )
 
 @Composable
@@ -87,7 +89,12 @@ fun App() {
                             },
                             mainContent = { Text(item.name) },
                             endContent = {
-                                Text("${String.format("%.0f", item.percentage)}%")
+                                Text(
+                                    text = "${item.percentage.toBigDecimal()
+                                        .setScale(2)
+                                        .stripTrailingZeros()
+                                        .toPlainString()}%"
+                                )
                             },
                             includeDivider = index < assets.size - 1,
                         )
