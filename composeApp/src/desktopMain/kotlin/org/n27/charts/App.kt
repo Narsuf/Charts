@@ -8,6 +8,8 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -55,7 +57,7 @@ private val assets = persistentListOf(
 @Preview
 fun App() {
     MaterialTheme {
-        Row {
+        Row(verticalAlignment = Alignment.CenterVertically) {
             Column(
                 modifier = Modifier
                     .weight(1f)
@@ -72,32 +74,32 @@ fun App() {
             Column(
                 modifier = Modifier
                     .weight(1f)
-                    .fillMaxHeight()
-                    .padding(horizontal = Spacing.loose),
+                    .padding(Spacing.loose),
                 horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center,
             ) {
                 CardContainer {
-                    assets.forEachIndexed { index, item ->
-                        Card(
-                            startContent = {
-                                Box(
-                                    modifier = Modifier
-                                        .size(16.dp)
-                                        .background(Color(item.color))
-                                )
-                            },
-                            mainContent = { Text(item.name) },
-                            endContent = {
-                                Text(
-                                    text = "${item.percentage.toBigDecimal()
-                                        .setScale(2)
-                                        .stripTrailingZeros()
-                                        .toPlainString()}%"
-                                )
-                            },
-                            includeDivider = index < assets.size - 1,
-                        )
+                    LazyColumn {
+                        itemsIndexed(assets) { index, item ->
+                            Card(
+                                startContent = {
+                                    Box(
+                                        modifier = Modifier
+                                            .size(16.dp)
+                                            .background(Color(item.color))
+                                    )
+                                },
+                                mainContent = { Text(item.name) },
+                                endContent = {
+                                    Text(
+                                        text = "${item.percentage.toBigDecimal()
+                                            .setScale(2)
+                                            .stripTrailingZeros()
+                                            .toPlainString()}%"
+                                    )
+                                },
+                                includeDivider = index < assets.size - 1,
+                            )
+                        }
                     }
                 }
             }

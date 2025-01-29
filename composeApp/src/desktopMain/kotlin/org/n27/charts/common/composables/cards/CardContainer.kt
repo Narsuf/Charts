@@ -31,6 +31,6 @@ fun CardContainer(
                 BorderStroke(1.dp, Palette.Gray),
                 roundedCornerShape
             ),
-        content = content
+        content = content,
     )
 }
