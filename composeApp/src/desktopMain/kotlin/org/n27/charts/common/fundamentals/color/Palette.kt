@@ -7,6 +7,7 @@ object Palette {
     const val DARK_BLUE = 0xFF115E7F
     const val BLUE = 0xFF267394
     const val LIGHT_BLUE = 0xFF3E85A3
+    const val LIGHTER_BLUE = 0xFF62A4C0
 
     const val DARK_RED = 0xFFE95734
     const val LIGHT_RED= 0xFFFF7A5A

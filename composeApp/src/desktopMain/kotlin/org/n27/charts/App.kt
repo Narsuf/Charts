@@ -29,6 +29,7 @@ import org.n27.charts.common.fundamentals.color.Palette.DARK_GREEN
 import org.n27.charts.common.fundamentals.color.Palette.DARK_PURPLE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
 import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
+import org.n27.charts.common.fundamentals.color.Palette.LIGHTER_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_PURPLE
@@ -43,7 +44,8 @@ private val assets = persistentListOf(
     Asset(name = "German bonds", color = DARK_RED, percentage = 5f),
     Asset(name = "Other bonds", color = DARK_GREEN, percentage = 15f),
 
-    Asset(name = "S&P 500", color = LIGHT_BLUE, percentage = 25f),
+    Asset(name = "S&P 500", color = LIGHT_BLUE, percentage = 20f),
+    Asset(name = "Russell 2000", color = LIGHTER_BLUE, percentage = 5f),
     Asset(name = "DAX 40", color = LIGHT_RED, percentage = 5f),
     Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 5f),
     Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 10f),
