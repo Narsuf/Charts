@@ -32,6 +32,7 @@ import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
 import org.n27.charts.common.fundamentals.color.Palette.LIGHTER_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREY
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_PURPLE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_RED
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_YELLOW
@@ -40,19 +41,20 @@ import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
     Asset(name = "USD bond +20yr", color = DARK_BLUE, percentage = 10f),
-    Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 15f),
-    Asset(name = "German bonds", color = DARK_RED, percentage = 5f),
-    Asset(name = "Other bonds", color = DARK_GREEN, percentage = 15f),
+    Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 14f),
+    Asset(name = "Other bonds", color = DARK_GREEN, percentage = 16f),
+    Asset(name = "German bonds", color = DARK_RED, percentage = 4.5f),
 
     Asset(name = "S&P 500", color = LIGHT_BLUE, percentage = 20f),
-    Asset(name = "Russell 2000", color = LIGHTER_BLUE, percentage = 5f),
-    Asset(name = "DAX 40", color = LIGHT_RED, percentage = 5f),
-    Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 5f),
+    Asset(name = "Russell 2000", color = LIGHTER_BLUE, percentage = 4f),
     Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 10f),
+    Asset(name = "DAX 40", color = LIGHT_RED, percentage = 4.5f),
+    Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 5f),
+    Asset(name = "SMI", color = LIGHT_GREY, percentage = 1f),
 
     Asset(name = "Bitcoin", color = LIGHT_YELLOW, percentage = 1f),
     Asset(name = "Gold", color = DARK_YELLOW, percentage = 7.5f),
-    Asset(name = "Commodity", color = DARK_PURPLE, percentage = 1.5f),
+    Asset(name = "Commodity", color = DARK_PURPLE, percentage = 2.5f),
 )
 
 @Composable
