@@ -40,16 +40,17 @@ import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
-    Asset(name = "USD bond +20yr", color = DARK_BLUE, percentage = 17f),
+    Asset(name = "USD bond +20yr", color = DARK_BLUE, percentage = 19f), // 4/1.5 proportion
     Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 7f),
     Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 15f),
-    Asset(name = "Other bonds", color = DARK_RED, percentage = 3f),
+    Asset(name = "Other bonds", color = DARK_RED, percentage = 1f),
 
-    Asset(name = "S&P 1500", color = LIGHT_BLUE, percentage = 24f),
-    Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 7.5f),
-    Asset(name = "DAX 40", color = LIGHT_RED, percentage = 4.5f),
-    Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 5f),
-    Asset(name = "SMI", color = LIGHT_GREY, percentage = 1f),
+    Asset(name = "S&P 1500", color = LIGHT_BLUE, percentage = 26f),
+    Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 6f),
+    Asset(name = "DAX 40", color = LIGHT_RED, percentage = 4f),
+    Asset(name = "NIKKEI 225", color = LIGHT_PURPLE, percentage = 4f),
+    Asset(name = "AEX", color = LIGHT_GREY, percentage = 1f),
+    Asset(name = "SMI", color = LIGHTER_BLUE, percentage = 1f),
 
     Asset(name = "Bitcoin", color = LIGHT_YELLOW, percentage = 1f),
     Asset(name = "Gold", color = DARK_YELLOW, percentage = 7.5f),
