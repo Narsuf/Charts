@@ -18,8 +18,9 @@ object Palette {
     const val DARK_YELLOW = 0xFFE9AC34
     const val LIGHT_YELLOW = 0xFFFDC75C
 
-    const val DARK_GREEN = 0xFF7FAE37
-    const val LIGHT_GREEN = 0xFFA1CE5C
+    const val DARK_GREEN = 0xFF62901C
+    const val GREEN = 0xFF7FAE37
+    const val LIGHT_GREEN = 0xFFA1CE5D
 
     const val LIGHT_GREY = 0xFF777777
 

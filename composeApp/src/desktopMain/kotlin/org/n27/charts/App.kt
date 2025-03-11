@@ -29,6 +29,7 @@ import org.n27.charts.common.fundamentals.color.Palette.DARK_GREEN
 import org.n27.charts.common.fundamentals.color.Palette.DARK_PURPLE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
 import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
+import org.n27.charts.common.fundamentals.color.Palette.GREEN
 import org.n27.charts.common.fundamentals.color.Palette.LIGHTER_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
@@ -42,13 +43,15 @@ import org.n27.charts.domain.Asset
 private val assets = persistentListOf(
     Asset(name = "USD bond +20yr", color = DARK_BLUE, percentage = 19f), // 4/1.5 proportion
     Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 7f),
-    Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 15f),
-    Asset(name = "Other bonds", color = DARK_RED, percentage = 1f),
+    Asset(name = "EUR bond 15-30yr", color = DARK_GREEN, percentage = 11f),
+    Asset(name = "EUR bond 7-10yr", color = GREEN, percentage = 4f),
+
+    Asset(name = "Stocks", color = DARK_RED, percentage = 6f),
 
     Asset(name = "S&P 1500", color = LIGHT_BLUE, percentage = 26f),
-    Asset(name = "Stocks", color = LIGHT_GREEN, percentage = 6f),
-    Asset(name = "CDAX", color = LIGHT_RED, percentage = 4f),
-    Asset(name = "TOPIX", color = LIGHT_PURPLE, percentage = 4f),
+    Asset(name = "CDAX", color = LIGHT_GREEN, percentage = 4f),
+    Asset(name = "TOPIX", color = LIGHT_RED, percentage = 3.5f),
+    Asset(name = "NORDIC", color = LIGHT_PURPLE, percentage = 1.5f),
     Asset(name = "AEX", color = LIGHT_GREY, percentage = 1f),
     Asset(name = "SPI", color = LIGHTER_BLUE, percentage = 1f),
 
