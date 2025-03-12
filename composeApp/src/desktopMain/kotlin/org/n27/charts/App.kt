@@ -30,30 +30,22 @@ import org.n27.charts.common.fundamentals.color.Palette.DARK_PURPLE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
 import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
 import org.n27.charts.common.fundamentals.color.Palette.GREEN
-import org.n27.charts.common.fundamentals.color.Palette.LIGHTER_BLUE
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREY
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_PURPLE
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_RED
-import org.n27.charts.common.fundamentals.color.Palette.LIGHT_YELLOW
+import org.n27.charts.common.fundamentals.color.Palette.RED
+import org.n27.charts.common.fundamentals.color.Palette.YELLOW
 import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
-    Asset(name = "USD bond 7-10yr", color = DARK_BLUE, percentage = 26f),
-    Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 16f),
+    Asset(name = "USD bond 7-10yr", color = DARK_BLUE, percentage = 28f),
+    Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 14f),
 
-    Asset(name = "Stocks", color = DARK_RED, percentage = 5f),
+    Asset(name = "Stocks", color = DARK_RED, percentage = 2f),
 
-    Asset(name = "S&P 1500", color = BLUE, percentage = 26f),
-    Asset(name = "CDAX", color = GREEN, percentage = 4f),
-    Asset(name = "TOPIX", color = LIGHT_RED, percentage = 3.5f),
-    Asset(name = "NORDIC", color = LIGHT_PURPLE, percentage = 1.5f),
-    Asset(name = "AEX", color = LIGHT_GREY, percentage = 1f),
-    Asset(name = "SPI", color = LIGHTER_BLUE, percentage = 1f),
+    Asset(name = "S&P (1)500", color = BLUE, percentage = 21f),
+    Asset(name = "STOXX 600", color = GREEN, percentage = 16f),
+    Asset(name = "TOPIX", color = RED, percentage = 3f),
 
-    Asset(name = "Bitcoin", color = LIGHT_YELLOW, percentage = 1f),
+    Asset(name = "Bitcoin", color = YELLOW, percentage = 1f),
     Asset(name = "Gold", color = DARK_YELLOW, percentage = 7.5f),
     Asset(name = "Commodity", color = DARK_PURPLE, percentage = 7.5f),
 )
