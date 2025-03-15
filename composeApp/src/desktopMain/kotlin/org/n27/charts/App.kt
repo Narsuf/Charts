@@ -30,18 +30,20 @@ import org.n27.charts.common.fundamentals.color.Palette.DARK_PURPLE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
 import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
 import org.n27.charts.common.fundamentals.color.Palette.GREEN
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.RED
 import org.n27.charts.common.fundamentals.color.Palette.YELLOW
 import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
-    Asset(name = "USD bond 7-10yr", color = DARK_BLUE, percentage = 27f),
+    Asset(name = "USD bond 20+yr", color = DARK_BLUE, percentage = 13f),
+    Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 14f),
     Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 13f),
 
     Asset(name = "Stocks", color = DARK_RED, percentage = 2f),
 
-    Asset(name = "S&P (1)500", color = BLUE, percentage = 20f),
+    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 20f),
     Asset(name = "STOXX 600", color = GREEN, percentage = 15f),
     Asset(name = "TOPIX", color = RED, percentage = 3f),
 
