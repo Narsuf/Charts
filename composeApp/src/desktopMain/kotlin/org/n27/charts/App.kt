@@ -37,18 +37,18 @@ import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 private val assets = persistentListOf(
-    Asset(name = "USD bond 20+yr", color = DARK_BLUE, percentage = 13f),
+    Asset(name = "USD bond 20+yr", color = DARK_BLUE, percentage = 14f),
     Asset(name = "USD bond 7-10yr", color = BLUE, percentage = 14f),
-    Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 13f),
+    Asset(name = "EUR bond 7-10yr", color = DARK_GREEN, percentage = 14f),
 
     Asset(name = "Stocks", color = DARK_RED, percentage = 2f),
 
-    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 20f),
-    Asset(name = "STOXX 600", color = GREEN, percentage = 15f),
+    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 21f),
+    Asset(name = "STOXX 600", color = GREEN, percentage = 16f),
     Asset(name = "TOPIX", color = RED, percentage = 3f),
 
     Asset(name = "Bitcoin", color = YELLOW, percentage = 1f),
-    Asset(name = "Gold", color = DARK_YELLOW, percentage = 18f),
+    Asset(name = "Gold", color = DARK_YELLOW, percentage = 14f),
     Asset(name = "Commodity", color = DARK_PURPLE, percentage = 1f),
 )
 
