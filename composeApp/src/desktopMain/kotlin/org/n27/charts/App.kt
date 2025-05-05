@@ -47,8 +47,7 @@ private val assets = persistentListOf(
     Asset(name = "STOXX 600", color = GREEN, percentage = 16f),
     Asset(name = "TOPIX", color = RED, percentage = 3f),
 
-    Asset(name = "Bitcoin", color = YELLOW, percentage = 1f),
-    Asset(name = "Gold", color = DARK_YELLOW, percentage = 14f),
+    Asset(name = "Gold", color = DARK_YELLOW, percentage = 15f),
     Asset(name = "Commodity", color = DARK_PURPLE, percentage = 1f),
 )
 
