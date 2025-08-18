@@ -41,17 +41,17 @@ US -> ≈27%
 Stoxx Europe 600 countries -> ≈21%
 Euro zone -> ≈15%
 Japan -> ≈4%
- */
+*/
 private val assets = persistentListOf(
-    Asset(name = "Dollar Treasury Bond 7-10yr", color = DARK_BLUE, percentage = 16f),
-    Asset(name = "USD Corporate Bond", color = BLUE, percentage = 16f),
+    Asset(name = "Dollar Treasury Bond 7-10yr", color = DARK_BLUE, percentage = 32f),
     Asset(name = "Euro Government Bond 7-10Y", color = DARK_GREEN, percentage = 9f),
     Asset(name = "EUR Corporate Bond", color = GREEN, percentage = 9f),
 
-    Asset(name = "Stocks", color = DARK_YELLOW, percentage = 10f),
-    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 21f),
-    Asset(name = "Stoxx Europe 600", color = LIGHT_GREEN, percentage = 16f), // SP * 0.78
-    Asset(name = "TOPIX", color = RED, percentage = 3f), // Stoxx * 0.2
+    Asset(name = "Stocks", color = DARK_YELLOW, percentage = 5f),
+    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 29f),
+    Asset(name = "DAX", color = LIGHT_GREEN, percentage = 12f),
+    //Asset(name = "Stoxx Europe 600", color = LIGHT_GREEN, percentage = 18f), // SP * 0.78
+    Asset(name = "TOPIX", color = RED, percentage = 4f), // SP * 0.15
 )
 
 /*
