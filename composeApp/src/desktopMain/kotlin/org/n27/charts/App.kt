@@ -23,50 +23,35 @@ import org.jetbrains.compose.ui.tooling.preview.Preview
 import org.n27.charts.common.composables.cards.Card
 import org.n27.charts.common.composables.cards.CardContainer
 import org.n27.charts.common.composables.charts.PieChart
-import org.n27.charts.common.fundamentals.color.Palette.BLUE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.DARK_GREEN
-import org.n27.charts.common.fundamentals.color.Palette.DARK_RED
 import org.n27.charts.common.fundamentals.color.Palette.DARK_YELLOW
-import org.n27.charts.common.fundamentals.color.Palette.GREEN
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_BLUE
 import org.n27.charts.common.fundamentals.color.Palette.LIGHT_GREEN
-import org.n27.charts.common.fundamentals.color.Palette.RED
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_RED
+import org.n27.charts.common.fundamentals.color.Palette.LIGHT_YELLOW
 import org.n27.charts.common.fundamentals.dimens.Spacing
 import org.n27.charts.domain.Asset
 
 /*
 World GDP percentage:
-US -> ≈27%
-Stoxx Europe 600 countries -> ≈21%
-Euro zone -> ≈15%
-Japan -> ≈4%
+US -> ≈26.8%
+Germany -> ≈4.2%
+Japan -> ≈3.7%
 */
+
 private val assets = persistentListOf(
-    Asset(name = "Dollar Treasury Bond 7-10yr", color = DARK_BLUE, percentage = 32f),
-    Asset(name = "Euro Government Bond 7-10Y", color = DARK_GREEN, percentage = 9f),
-    Asset(name = "EUR Corporate Bond", color = GREEN, percentage = 9f),
+    Asset(name = "Dollar Treasury Bond 7-10yr", color = DARK_BLUE, percentage = 15f),
+    Asset(name = "Cash", color = DARK_GREEN, percentage = 25f),
+    Asset(name = "Gold", color = DARK_YELLOW, percentage = 15f),
 
-    Asset(name = "Stocks", color = DARK_YELLOW, percentage = 5f),
-    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 29f),
-    Asset(name = "DAX", color = LIGHT_GREEN, percentage = 12f),
-    //Asset(name = "Stoxx Europe 600", color = LIGHT_GREEN, percentage = 18f), // SP * 0.78
-    Asset(name = "TOPIX", color = RED, percentage = 4f), // SP * 0.15
+    Asset(name = "Stocks", color = LIGHT_BLUE, percentage = 30f),
+
+    // 15%
+    Asset(name = "S&P 500", color = LIGHT_GREEN, percentage = 11.58f),
+    Asset(name = "DAX", color = LIGHT_YELLOW, percentage = 1.82f),
+    Asset(name = "NIKKEI", color = LIGHT_RED, percentage = 1.6f),
 )
-
-/*
-private val assets = persistentListOf(
-    Asset(name = "Dollar Treasury Bond 7-10yr", color = DARK_BLUE, percentage = 10f),
-    Asset(name = "USD Corporate Bond", color = BLUE, percentage = 10f),
-    Asset(name = "Euro Government Bond 7-10Y", color = DARK_GREEN, percentage = 5f),
-    Asset(name = "EUR Corporate Bond", color = GREEN, percentage = 5f),
-
-    Asset(name = "Stocks", color = DARK_YELLOW, percentage = 10f),
-    Asset(name = "S&P (1)500", color = LIGHT_BLUE, percentage = 31f),
-    Asset(name = "Stoxx Europe 600", color = LIGHT_GREEN, percentage = 24f),
-    Asset(name = "TOPIX", color = RED, percentage = 5f),
-)
-*/
 
 @Composable
 @Preview
