@@ -1,4 +1,4 @@
-package org.n27.charts.common.composables.charts
+package org.n27.charts.presentation.composables.charts
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.aspectRatio

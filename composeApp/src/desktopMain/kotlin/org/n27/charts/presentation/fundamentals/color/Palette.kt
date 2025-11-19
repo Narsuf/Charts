@@ -1,9 +1,8 @@
-package org.n27.charts.common.fundamentals.color
+package org.n27.charts.presentation.fundamentals.color
 
 import androidx.compose.ui.graphics.Color
 
 object Palette {
-
     const val DARK_BLUE = 0xFF115E7F
     const val LIGHT_BLUE = 0xFF3E85A3
 

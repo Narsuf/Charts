@@ -7,7 +7,5 @@ fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
         title = "Charts",
-    ) {
-        App()
-    }
+    ) { App() }
 }
