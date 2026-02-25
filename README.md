@@ -4,4 +4,4 @@ Desktop app (Compose Multiplatform) to draw charts.
 
 | Search |
 |:-:|
-| <img width="600" alt ="image" src="https://github.com/user-attachments/assets/95219cfe-d09a-4091-80da-8f57f9b48f2e"> |
+| <img width="600" alt ="image" src="https://github.com/user-attachments/assets/fb9d70ae-0cef-422c-9791-d71b02118439"> |
